@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="projectJS.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="LoadTasks(), CheckDate()" style="background-image: url(tile.jpg)">
+    
+    <div id="headline_container"></div>
+            <img src="title.png" id="headline">      
+    </div>
+        <form id="formDiv">
+            <div id=form_headline> New Task: </div>
+            <br>
+            <textarea id ="task_details" placeholder="Your task details..." ></textarea><br>
+            <div>
+            <input type="date" id="task_date" min="2021-01-01" max="2050-01-01" >
+            <input type="time" id="task_time" ><br>
+           </div>
+           <div style="text-align: center;">
+            <button onclick="SetTask(), CheckDate(), LoadTask(0) " input type="submit" id="submit">submit</button>
+            <input type="reset" value="reset" id="reset">
+            </div>
+            <br>
+        </form>
+<div id="container">
+ 
+</div>
+
+   
+</body>
+</html>
